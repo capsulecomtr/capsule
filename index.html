@@ -1,7 +1,129 @@
-<!DOCTYPE html><html lang="en" class="h-full bg-void" style="view-transition-name:root"><head><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="./astro/ClientRouter.js"></script><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="color-scheme" content="dark"><link rel="icon" type="image/svg+xml" href="./favicon.svg?v=3"><meta name="description" content="capsule.com.tr"><meta name="twitter:image" content="https://3WSnLKxSTb7F.gg/images/XGOaFLEzxlt8.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="@capsule"><meta property="og:title" content="capsule"><meta property="og:description" content="capsule.com.tr"><meta property="og:image" content="./images/twitter.png"><title>capsule</title><meta name="theme-color" content="#050505"><link rel="stylesheet" href="./astro/BaseLayout.css"><script type="module" src="./astro/page.js"></script>
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-void" style="view-transition-name:root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capsule</title>
+    <meta name="description" content="capsule.com.tr">
+    <meta name="theme-color" content="#050505">
+    <meta name="color-scheme" content="dark">
+    
+    <!-- View Transitions & Router -->
+    <meta name="astro-view-transitions-enabled" content="true">
+    <meta name="astro-view-transitions-fallback" content="animate">
+    <script type="module" src="./astro/ClientRouter.js"></script>
+    
+    <!-- Favicon & Styles -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg?v=3">
+    <link rel="canonical" href="https://capsule.com.tr">
+    <link rel="stylesheet" href="./astro/BaseLayout.css">
+    <script type="module" src="./astro/page.js"></script>
+    
+    <!-- Social Meta Tags (Open Graph / Twitter) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://capsule.com.tr">
+    <meta property="og:title" content="capsule">
+    <meta property="og:description" content="capsule.com.tr">
+    <meta property="og:image" content="./images/twitter.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@capsule">
+    <meta name="twitter:image" content="https://3WSnLKxSTb7F.gg/images/XGOaFLEzxlt8.png">
 
-<script defer data-astro-rerun data-domain="capsule.com.tr" data-api="https://plausible.io/api/event">
-!function(){var t,n,e,i=document.currentScript,o={};function a(t,n,e){window.fetch&&fetch(t,{method:"POST",headers:{"Content-Type":"text/plain"},keepalive:!0,body:JSON.stringify(n)}).then(function(t){e&&e.callback&&e.callback({status:t.status})}).catch(function(t){e&&e.callback&&e.callback({error:t})})}var c=!1,r=location.href,l={},d=-1,u=0,s=0;function w(){var i=v();if(!t&&(d<e||i>=3e3)){d=e;var c={n:"engagement",sd:Math.round(e/n*100),d:o.domain,u:r,p:l,e:i,v:34};u=0,s=0,a(o.endpoint,c)}}function p(){"visible"===document.visibilityState&&document.hasFocus()&&0===u?u=Date.now():"hidden"!==document.visibilityState&&document.hasFocus()||(s=v(),u=0,w())}function v(){return u?s+(Date.now()-u):s}function f(){var t=document.body||{},n=document.documentElement||{};return Math.max(t.scrollHeight||0,t.offsetHeight||0,t.clientHeight||0,n.scrollHeight||0,n.offsetHeight||0,n.clientHeight||0)}function h(){var t,e;return t=window.innerHeight,e=window.scrollY,n<=t?n:e+t}function g(i,v){var g="pageview"===i;if(g&&c&&(w(),n=f(),e=h()),/^localhost$|^127(\.[0-9]+){0,2}\.[0-9]+$|^\[::1?\]$/.test(location.hostname)||"file:"===location.protocol)return m(i,v,"localhost");if((window._phantom||window.__nightmare||window.navigator.webdriver||window.Cypress)&&!window.__plausible)return m(i,v);try{if("true"===window.localStorage.plausible_ignore)return m(i,v,"localStorage flag")}catch(t){}var b={};b.n=i,b.v=34,b.u=location.href,b.d=o.domain,b.r=document.referrer||null,v&&v.meta&&(b.m=JSON.stringify(v.meta)),v&&v.props&&(b.p=v.props),v&&!1===v.interactive&&(b.i=!1),g&&(t=!1,r=b.u,l=b.p,d=-1,s=0,u=Date.now(),c||(document.addEventListener("visibilitychange",p),window.addEventListener("blur",p),window.addEventListener("focus",p),c=!0)),a(o.endpoint,b,v)}function m(n,e,i){i&&o.logging&&console.warn("Ignoring Event: "+i),e&&e.callback&&e.callback(),"pageview"===n&&(t=!0)}!function t(a){o.endpoint=i.getAttribute("data-api")||new URL(i.src).origin+"/api/event",o.domain=i.getAttribute("data-domain"),o.logging=!0,n=f(),e=h(),new ResizeObserver(function(){n=f()}).observe(document.documentElement),document.addEventListener("scroll",function(){var t=h();t>e&&(e=t)}),function(t){function n(n){n&&e===location.pathname||(e=location.pathname,t("pageview"))}var e,i=function(){n(!0)},o=window.history;if(o.pushState){var a=o.pushState;o.pushState=function(){a.apply(this,arguments),i()},window.addEventListener("popstate",i)}"hidden"===document.visibilityState||"prerender"===document.visibilityState?document.addEventListener("visibilitychange",function(){e||"visible"!==document.visibilityState||n()}):n(),window.addEventListener("pageshow",function(t){t.persisted&&n()})}(g);for(var c=window.plausible&&window.plausible.q||[],r=0;r<c.length;r++)g.apply(this,c[r]);window.plausible=g,window.plausible.init=t,window.plausible.v=34,window.plausible.l=!0}()}();
-</script>
-
-</head> <body class="min-h-full bg-void font-mono text-text selection:bg-accent/20"> <main class="flex flex-col text-text">  <div class="relative flex min-h-screen flex-col items-center justify-center px-6"> <!-- Subtle ambient glow --> <div class="pointer-events-none absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.03]" style="background: radial-gradient(circle, #22d3ee 0%, transparent 70%);"></div> <div class="relative z-10 w-full max-w-xs"> <!-- Header --> <header class="animate-fade-in-up mb-16 opacity-0" style="animation-delay: 0s;"> <h1 class="text-text text-xl tracking-tight">capsule</h1> <p class="text-muted mt-1 text-sm">builds things</p> </header> <!-- Links --> <nav class="flex flex-col gap-0"> <a href="#" target="_blank" rel="noopener noreferrer" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.05s;"> <span class="text-subtle group-hover:text-text transition-colors duration-200"> ai </span> <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100"> <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"> <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path> <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path> </svg> </span> <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span> </a><a href="https://www.instagram.com/beatsmood" target="_blank" rel="noopener noreferrer" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.1s;"> <span class="text-subtle group-hover:text-text transition-colors duration-200"> beatsmood </span> <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100"> <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"> <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path> <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path> </svg> </span> <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span> </a><a href="https://youtube.com/@beatsmood" target="_blank" rel="noopener noreferrer" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.15000000000000002s;"> <span class="text-subtle group-hover:text-text transition-colors duration-200"> youtube </span> <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100"> <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"> <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path> <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path> </svg> </span> <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span> </a><a href="https://beatsmood.bandcamp.com" target="_blank" rel="noopener noreferrer" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.2s;"> <span class="text-subtle group-hover:text-text transition-colors duration-200"> bandcamp </span> <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100"> <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"> <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path> <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path> </svg> </span> <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span> </a><a href="#" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.25s;"> <span class="text-subtle group-hover:text-text transition-colors duration-200"> blog </span> <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100"> <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"> <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path> </svg> </span> <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span> </a><a href="#" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.30000000000000004s;"> <span class="text-subtle group-hover:text-text transition-colors duration-200"> sponsors </span> <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100"> <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"> <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path> </svg> </span> <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span> </a> </nav> <!-- Footer --> <footer class="mt-16 flex items-center gap-x-5 border-t border-white/5 pt-6 text-sm tracking-wider opacity-0 animate-fade-in-up" style="animation-delay: 0.35000000000000003s;"> <a href="https://github.com/capsulecomtr" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text"> gh </a><a href="https://twitter.com/capsulecomtr" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text"> x </a><a href="#" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text"> yt </a><a href="#" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text"> twitch </a><a href="#" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text"> discord </a> </footer> </div> </div>    </main> </body></html>
+    <!-- Plausible Analytics (Deferred & Optimized Position) -->
+    <script defer data-astro-rerun data-domain="capsule.com.tr" data-api="https://plausible.io/api/event">
+    !function(){var t,n,e,i=document.currentScript,o={};function a(t,n,e){window.fetch&&fetch(t,{method:"POST",headers:{"Content-Type":"text/plain"},keepalive:!0,body:JSON.stringify(n)}).then(function(t){e&&e.callback&&e.callback({status:t.status})}).catch(function(t){e&&e.callback&&e.callback({error:t})})}var c=!1,r=location.href,l={},d=-1,u=0,s=0;function w(){var i=v();if(!t&&(d<e||i>=3e3)){d=e;var c={n:"engagement",sd:Math.round(e/n*100),d:o.domain,u:r,p:l,e:i,v:34};u=0,s=0,a(o.endpoint,c)}}function p(){"visible"===document.visibilityState&&document.hasFocus()&&0===u?u=Date.now():"hidden"!==document.visibilityState&&document.hasFocus()||(s=v(),u=0,w())}function v(){return u?s+(Date.now()-u):s}function f(){var t=document.body||{},n=document.documentElement||{};return Math.max(t.scrollHeight||0,t.offsetHeight||0,t.clientHeight||0,n.scrollHeight||0,n.offsetHeight||0,n.clientHeight||0)}function h(){var t,e;return t=window.innerHeight,e=window.scrollY,n<=t?n:e+t}function g(i,v){var g="pageview"===i;if(g&&c&&(w(),n=f(),e=h()),/^localhost$|^127(\.[0-9]+){0,2}\.[0-9]+$|^\[::1?\]$/.test(location.hostname)||"file:"===location.protocol)return m(i,v,"localhost");if((window._phantom||window.__nightmare||window.navigator.webdriver||window.Cypress)&&!window.__plausible)return m(i,v);try{if("true"===window.localStorage.plausible_ignore)return m(i,v,"localStorage flag")}catch(t){}var b={};b.n=i,b.v=34,b.u=location.href,b.d=o.domain,b.r=document.referrer||null,v&&v.meta&&(b.m=JSON.stringify(v.meta)),v&&v.props&&(b.p=v.props),v&&!1===v.interactive&&(b.i=!1),g&&(t=!1,r=b.u,l=b.p,d=-1,s=0,u=Date.now(),c||(document.addEventListener("visibilitychange",p),window.addEventListener("blur",p),window.addEventListener("focus",p),c=!0)),a(o.endpoint,b,v)}function m(n,e,i){i&&o.logging&&console.warn("Ignoring Event: "+i),e&&e.callback&&e.callback(),"pageview"===n&&(t=!0)}!function t(a){o.endpoint=i.getAttribute("data-api")||new URL(i.src).origin+"/api/event",o.domain=i.getAttribute("data-domain"),o.logging=!0,n=f(),e=h(),new ResizeObserver(function(){n=f()}).observe(document.documentElement),document.addEventListener("scroll",function(){var t=h();t>e&&(e=t)}),function(t){function n(n){n&&e===location.pathname||(e=location.pathname,t("pageview"))}var e,i=function(){n(!0)},o=window.history;if(o.pushState){var a=o.pushState;o.pushState=function(){a.apply(this="pageview")},window.addEventListener("popstate",i)}"hidden"===document.visibilityState||"prerender"===document.visibilityState?document.addEventListener("visibilitychange",function(){e||"visible"!==document.visibilityState||n()}):n(),window.addEventListener("pageshow",function(t){t.persisted&&n()})}(g);for(var c=window.plausible&&window.plausible.q||[],r=0;r<c.length;r++)g.apply(this,c[r]);window.plausible=g,window.plausible.init=t,window.plausible.v=34,window.plausible.l=!0}()}();
+    </script>
+</head>
+<body class="min-h-full bg-void font-mono text-text selection:bg-accent/20">
+    <main class="flex flex-col text-text">
+        <div class="relative flex min-h-screen flex-col items-center justify-center px-6">
+            <!-- Subtle ambient glow -->
+            <div class="pointer-events-none absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.03]" style="background: radial-gradient(circle, #22d3ee 0%, transparent 70%);"></div>
+            
+            <div class="relative z-10 w-full max-w-xs">
+                <!-- Header -->
+                <header class="animate-fade-in-up mb-16 opacity-0" style="animation-delay: 0s;">
+                    <h1 class="text-text text-xl tracking-tight">capsule</h1>
+                    <p class="text-muted mt-1 text-sm">builds things</p>
+                </header>
+                
+                <!-- Links -->
+                <nav class="flex flex-col gap-0">
+                    <a href="javascript:void(0)" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.05s;">
+                        <span class="text-subtle group-hover:text-text transition-colors duration-200">ai</span>
+                        <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                            </svg>
+                        </span>
+                        <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/beatsmood" target="_blank" rel="noopener noreferrer" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.1s;">
+                        <span class="text-subtle group-hover:text-text transition-colors duration-200">beatsmood</span>
+                        <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                            </svg>
+                        </span>
+                        <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span>
+                    </a>
+                    
+                    <a href="https://youtube.com/@beatsmood" target="_blank" rel="noopener noreferrer" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.15s;">
+                        <span class="text-subtle group-hover:text-text transition-colors duration-200">youtube</span>
+                        <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                            </svg>
+                        </span>
+                        <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span>
+                    </a>
+                    
+                    <a href="https://beatsmood.bandcamp.com" target="_blank" rel="noopener noreferrer" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.2s;">
+                        <span class="text-subtle group-hover:text-text transition-colors duration-200">bandcamp</span>
+                        <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                            </svg>
+                        </span>
+                        <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span>
+                    </a>
+                    
+                    <a href="javascript:void(0)" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.25s;">
+                        <span class="text-subtle group-hover:text-text transition-colors duration-200">blog</span>
+                        <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                        <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span>
+                    </a>
+                    
+                    <a href="javascript:void(0)" class="group animate-fade-in-up relative flex items-center justify-between py-3 opacity-0" style="animation-delay: 0.3s;">
+                        <span class="text-subtle group-hover:text-text transition-colors duration-200">sponsors</span>
+                        <span class="text-muted opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                        <span class="bg-accent/40 absolute bottom-2 left-0 h-px w-0 transition-all duration-300 ease-out group-hover:w-full"></span>
+                    </a>
+                </nav>
+                
+                <!-- Footer -->
+                <footer class="mt-16 flex items-center gap-x-5 border-t border-white/5 pt-6 text-sm tracking-wider opacity-0 animate-fade-in-up" style="animation-delay: 0.35s;">
+                    <a href="https://github.com/capsulecomtr" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text">gh</a>
+                    <a href="https://twitter.com/capsulecomtr" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text">x</a>
+                    <a href="https://youtube.com/@beatsmood" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text">yt</a>
+                    <a href="javascript:void(0)" class="text-muted transition-colors duration-200 hover:text-text">twitch</a>
+                    <a href="javascript:void(0)" class="text-muted transition-colors duration-200 hover:text-text">discord</a>
+                </footer>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
