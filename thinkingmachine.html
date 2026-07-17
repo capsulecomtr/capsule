@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-void" style="view-transition-name:root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thinking machine - capsule</title>
+    <meta name="description" content="capsule builds things. Thoughts on tech and content.">
+    <meta name="keywords" content="capsule, ai, beatsmood, music, art, capsulecomtr, thinking machine, builds things">
+    <meta name="theme-color" content="#050505">
+    <meta name="color-scheme" content="dark">
+    
+    <!-- View Transitions & Router -->
+    <meta name="astro-view-transitions-enabled" content="true">
+    <meta name="astro-view-transitions-fallback" content="animate">
+    <script type="module" src="https://capsule.com.tr/astro/ClientRouter.js"></script>
+    
+    <!-- Favicon & Styles -->
+    <link rel="icon" type="image/svg+xml" href="https://capsule.com.tr/favicon.svg?v=3">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://capsule.com.tr/images/logo.png">
+    <link rel="canonical" href="https://capsule.com.tr">
+    <link rel="stylesheet" href="https://capsule.com.tr/astro/BaseLayout.css">
+    <script type="module" src="https://capsule.com.tr/astro/page.js"></script>
+    
+    <!-- Social Meta Tags (Open Graph / Twitter) -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://capsule.com.tr">
+    <meta property="og:title" content="Hello World">
+    <meta property="og:description" content="capsule builds things. Thoughts on tech and content.">
+    <meta property="og:image" content="https://capsule.com.tr/images/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@capsulecomtr">
+    <meta name="twitter:image" content="https://capsule.com.tr/images/logo.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "capsule",
+      "url": "https://capsule.com.tr",
+      "description": "capsule builds things.",
+      "keywords": "capsule, ai, beatsmood, music"
+    }
+    </script>
+
+    <!-- Plausible Analytics -->
+    <script defer data-astro-rerun data-domain="capsule.com.tr" data-api="https://plausible.io/api/event">
+    !function(){var t,n,e,i=document.currentScript,o={};function a(t,n,e){window.fetch&&fetch(t,{method:"POST",headers:{"Content-Type":"text/plain"},keepalive:!0,body:JSON.stringify(n)}).then(function(t){e&&e.callback&&e.callback({status:t.status})}).catch(function(t){e&&e.callback&&e.callback({error:t})})}var c=!1,r=location.href,l={},d=-1,u=0,s=0;function w(){var i=v();if(!t&&(d<e||i>=3e3)){d=e;var c={n:"engagement",sd:Math.round(e/n*100),d:o.domain,u:r,p:l,e:i,v:34};u=0,s=0,a(o.endpoint,c)}}function p(){"visible"===document.visibilityState&&document.hasFocus()&&0===u?u=Date.now():"hidden"!==document.visibilityState&&document.hasFocus()||(s=v(),u=0,w())}function v(){return u?s+(Date.now()-u):s}function f(){var t=document.body||{},n=document.documentElement||{};return Math.max(t.scrollHeight||0,t.offsetHeight||0,t.clientHeight||0,n.scrollHeight||0,n.offsetHeight||0,n.clientHeight||0)}function h(){var t,e;return t=window.innerHeight,e=window.scrollY,n<=t?n:e+t}function g(i,v){var g="pageview"===i;if(g&&c&&(w(),n=f(),e=h()),/^localhost$|^127(\.[0-9]+){0,2}\.[0-9]+$|^\[::1?\]$/.test(location.hostname)||"file:"===location.protocol)return m(i,v,"localhost");if((window._phantom||window.__nightmare||window.navigator.webdriver||window.Cypress)&&!window.__plausible)return m(i,v);try{if("true"===window.localStorage.plausible_ignore)return m(i,v,"localStorage flag")}catch(t){}var b={};b.n=i,b.v=34,b.u=location.href,b.d=o.domain,b.r=document.referrer||null,v&&v.meta&&(b.m=JSON.stringify(v.meta)),v&&v.props&&(b.p=v.props),v&&!1===v.interactive&&(b.i=!1),g&&(t=!1,r=b.u,l=b.p,d=-1,s=0,u=Date.now(),c||(document.addEventListener("visibilitychange",p),window.addEventListener("blur",p),window.addEventListener("focus",p),c=!0)),a(o.endpoint,b,v)}function m(n,e,i){i&&o.logging&&console.warn("Ignoring Event: "+i),e&&e.callback&&e.callback(),"pageview"===n&&(t=!0)}!function t(a){o.endpoint=i.getAttribute("data-api")||new URL(i.src).origin+"/api/event",o.domain=i.getAttribute("data-domain"),o.logging=!0,n=f(),e=h(),new ResizeObserver(function(){n=f()}).observe(document.documentElement),document.addEventListener("scroll",function(){var t=h();t>e&&(e=t)}),function(t){function n(n){n&&e===location.pathname||(e=location.pathname,t("pageview"))}var e,i=function(){n(!0)},o=window.history;if(o.pushState){var a=o.pushState;o.pushState=function(){a.apply(this="pageview")},window.addEventListener("popstate",i)}"hidden"===document.visibilityState||"prerender"===document.visibilityState?document.addEventListener("visibilitychange",function(){e||"visible"!==document.visibilityState||n()}):n(),window.addEventListener("pageshow",function(t){t.persisted&&n()})}(g);for(var c=window.plausible&&window.plausible.q||[],r=0;r<c.length;r++)g.apply(this,c[r]);window.plausible=g,window.plausible.init=t,window.plausible.v=34,window.plausible.l=!0}()}();
+    </script>
+</head>
+
+<body class="min-h-full bg-void font-mono text-text selection:bg-accent/20">
+  <main class="flex flex-col text-text">
+    <div class="mx-auto w-full max-w-2xl px-6 py-16">
+      <article class="prose prose-invert prose-lg max-w-none">
+        <header class="not-prose mb-12 border-b border-white/10 pb-8">
+          <h1 class="text-text mb-3 text-2xl font-medium tracking-tight"> thinking machine </h1>
+          <time datetime="Mon Jul 15 2026 00:00:00 GMT+0000 (Coordinated Universal Time)" class="text-muted text-sm">capsule lab</time>
+        </header>
+        
+<!-- ANA BAŞLIK -->
+<h2 style="font-size: 1.2em; font-weight: bold; margin-bottom: 20px;">amplifying human potential through AI</h2>
+
+<!-- GİRİŞ BÖLÜMÜ -->
+<p>A tool only mirrors the hand. A Thinking Machine thinks with it.</p>
+<p>At Capsule Lab, we believe artificial intelligence is not the end of human ingenuity, but its greatest accelerator. We build machines that think—not instead of people, but alongside them. We do not aim to replace human cognition, but to challenge and extend it. The Thinking Machine does not automate thought; it provokes it.</p>
+
+<div style="margin-top: 50px;"></div>
+
+<!-- BÖLÜM 1 -->
+<h2 style="font-size: 1.2em; font-weight: bold; margin-bottom: 20px;">expand, don’t replace</h2>
+<p>The highest ambition of AI is not complete autonomy. The systems we build are not designed to bypass human judgment, creativity, or curiosity. They are designed to challenge and strengthen them.</p>
+<p>AI should not replace human agency. It must expand it.</p>
+
+<div style="margin-top: 50px;"></div>
+
+<!-- BÖLÜM 2 -->
+<h2 style="font-size: 1.2em; font-weight: bold; margin-bottom: 20px;">shape the tool to the person</h2>
+<p>No two people think alike. No two people create alike.</p>
+<p>We do not adapt to the machine, nor does the machine merely adapt to us. We shape the Thinking Machine, and in return, its thinking shapes our reality. Personalization is not a feature; it is the foundation of useful intelligence.</p>
+
+<div style="margin-top: 50px;"></div>
+
+<!-- BÖLÜM 3 -->
+<h2 style="font-size: 1.2em; font-weight: bold; margin-bottom: 20px;">learning by building</h2>
+<p>Ideas become meaningful only when they meet reality. Research and creation are not separate disciplines; they are parts of the same learning process.</p>
+<p>Building reveals reality. Reality shapes research. Progress belongs to those who build, learn, refine, and build again.</p>
+
+<div style="margin-top: 50px;"></div>
+
+<!-- BÖLÜM 4 -->
+<h2 style="font-size: 1.2em; font-weight: bold; margin-bottom: 20px;">measure what matters</h2>
+<p>The true value of AI is not measured by larger models or abstract benchmarks. It is measured by what people are able to accomplish because it exists.</p>
+<p>Did it help someone discover an idea they would never have reached alone? Did it make creativity more accessible? The future of intelligence is not about machines becoming more human—it is about helping humans become more capable.</p>
+
+<!-- BÖLÜM 5 -->
+<h2 style="font-size: 1.2em; font-weight: bold; margin-bottom: 20px;">build the future of intelligence</h2>
+<p>Capsule Lab exists to expand what people can imagine, create, and achieve.</p>
+<p>We are building intelligent systems that people can understand, adapt, and trust—systems that become a natural extension of human creativity rather than a replacement for it.</p>
+<p>Expand, don't replace.</p>
+<p>That is the future Capsule Lab exists to build.</p>
+        
+      </article>
+    </div>
+
+    <!-- Navigation -->
+    <aside class="mb-8 text-center">
+      <a href="index.html" class="group mt-8 -mb-4 inline-flex items-center justify-center gap-2 p-2 text-muted transition-colors duration-200 hover:text-text">
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        <span class="text-sm tracking-wide">blog</span>
+      </a>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="[--space:--spacing(6)] sm:[--space:--spacing(10)] border-t border-white/5 pt-(--space) pb-safe-offset-(--space) mb-8">
+      <div class="container mx-auto px-4">
+        <div class="flex w-full items-center justify-center gap-x-6 text-sm tracking-wider">
+          <a href="https://github.com/capsulecomtr" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text">gh</a>
+                    <a href="https://twitter.com/capsulecomtr" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text">x</a>
+                    <a href="https://youtube.com/@capsulecomtr" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text">yt</a>
+                    <a href="https://www.twitch.tv/capsulecomtr" class="text-muted transition-colors duration-200 hover:text-text">tw</a>
+                    <a href="javascript:void(0)" class="text-muted transition-colors duration-200 hover:text-text">dc</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
