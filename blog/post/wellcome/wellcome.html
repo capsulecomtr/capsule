@@ -3,40 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Hello World - capsule</title>
+
     <meta name="description" content="capsule builds things. Thoughts on tech and content.">
     <meta name="keywords" content="capsule, ai, beatsmood, music, art, capsulecomtr, artificial intelligence, builds things">
     <meta name="theme-color" content="#050505">
     <meta name="color-scheme" content="dark">
 
+    <!-- View Transitions -->
     <meta name="astro-view-transitions-enabled" content="true">
     <meta name="astro-view-transitions-fallback" content="animate">
+
     <script type="module" src="https://capsule.com.tr/astro/ClientRouter.js"></script>
 
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="https://capsule.com.tr/favicon.svg?v=3">
     <link rel="icon" type="image/png" sizes="32x32" href="https://capsule.com.tr/images/logo.png">
-    <link rel="canonical" href="https://capsule.com.tr">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://capsule.com.tr/blog/post/wellcome/wellcome.html">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="https://capsule.com.tr/astro/BaseLayout.css">
     <script type="module" src="https://capsule.com.tr/astro/page.js"></script>
 
+    <!-- Open Graph -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://capsule.com.tr">
+    <meta property="og:url" content="https://capsule.com.tr/blog/post/wellcome/wellcome.html">
     <meta property="og:title" content="Hello World">
     <meta property="og:description" content="capsule builds things. Thoughts on tech and content.">
-    <meta property="og:image" content="https://capsule.com.tr/images/logo.png">
+    <meta property="og:image" content="https://capsule.com.tr/blog/post/wellcome/thinkingmachine.png">
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@capsulecomtr">
-    <meta name="twitter:image" content="https://capsule.com.tr/images/logo.png">
+    <meta name="twitter:image" content="https://capsule.com.tr/blog/post/wellcome/thinkingmachine.png">
 
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context":"https://schema.org",
-      "@type":"WebSite",
-      "name":"capsule",
-      "url":"https://capsule.com.tr",
-      "description":"capsule builds things.",
-      "keywords":"capsule, ai, beatsmood, music"
+      "@type":"BlogPosting",
+      "headline":"Hello World",
+      "author":{
+        "@type":"Organization",
+        "name":"Capsule Lab"
+      },
+      "publisher":{
+        "@type":"Organization",
+        "name":"Capsule",
+        "logo":{
+          "@type":"ImageObject",
+          "url":"https://capsule.com.tr/images/logo.png"
+        }
+      },
+      "datePublished":"2026-07-15",
+      "dateModified":"2026-07-15",
+      "image":"https://capsule.com.tr/blog/post/wellcome/thinkingmachine.png",
+      "mainEntityOfPage":"https://capsule.com.tr/blog/post/wellcome/wellcome.html"
     }
     </script>
 
@@ -44,6 +69,7 @@
     <script defer data-astro-rerun data-domain="capsule.com.tr" data-api="https://plausible.io/api/event">
     !function(){/* analytics */}();
     </script>
+
 </head>
 
 <body class="min-h-full bg-void font-mono text-text selection:bg-accent/20">
@@ -55,15 +81,17 @@
 <article class="prose prose-invert prose-lg max-w-none">
 
 <header class="not-prose mb-12 border-b border-white/10 pb-8">
+
 <h1 class="text-text mb-3 text-2xl font-medium tracking-tight">
 Hello World
 </h1>
 
 <time
-datetime="2026-12-15"
+datetime="2026-07-15"
 class="text-muted text-sm">
-December 15, 2026
+July 15, 2026
 </time>
+
 </header>
 
 <p>Today, Capsule Lab is sharing the first glimpse of something it has been quietly building.</p>
@@ -73,13 +101,13 @@ December 15, 2026
 <p>A new kind of Thinking Machine.</p>
 
 <img
-    id="thinking-machine"
-    src="thinkingmachine.png?v=1"
-    alt="thinking machine prototype"
-    loading="eager"
-    fetchpriority="high"
-    decoding="sync"
-    class="w-full rounded border border-white/5 bg-white/5 object-cover max-h-[500px]">
+id="thinking-machine"
+src="thinkingmachine.png?v=1"
+alt="thinking machine prototype"
+loading="eager"
+fetchpriority="high"
+decoding="sync"
+class="w-full rounded border border-white/5 bg-white/5 object-cover max-h-[500px]">
 
 <p>Designed around a simple belief: AI should expand human potential, not replace it. It should be present when it matters, adapt to the way people think, and become a natural extension of human curiosity and creativity.</p>
 
@@ -94,21 +122,24 @@ December 15, 2026
 </div>
 
 <aside class="mb-8 text-center">
+
 <a
-    href="../../../blog/blog.html"
-    data-astro-reload
-    class="group mt-8 -mb-4 inline-flex items-center justify-center gap-2 p-2 text-muted transition-colors duration-200 hover:text-text">
+href="../../../blog/blog.html"
+data-astro-reload
+class="group mt-8 -mb-4 inline-flex items-center justify-center gap-2 p-2 text-muted transition-colors duration-200 hover:text-text">
 
 <svg xmlns="http://www.w3.org/2000/svg"
 class="size-4"
 fill="none"
 viewBox="0 0 24 24"
 stroke="currentColor">
+
 <path
 stroke-linecap="round"
 stroke-linejoin="round"
 stroke-width="2"
 d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+
 </svg>
 
 <span class="text-sm tracking-wide">
@@ -116,6 +147,7 @@ blog
 </span>
 
 </a>
+
 </aside>
 
 <footer class="[--space:--spacing(6)] sm:[--space:--spacing(10)] border-t border-white/5 pt-(--space) pb-safe-offset-(--space) mb-8">
@@ -124,36 +156,15 @@ blog
 
 <div class="flex w-full items-center justify-center gap-x-6 text-sm tracking-wider">
 
-<a href="https://github.com/capsulecomtr"
-target="_blank"
-rel="noopener noreferrer"
-class="text-muted transition-colors duration-200 hover:text-text">
-gh
-</a>
+<a href="https://github.com/capsulecomtr" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text">gh</a>
 
-<a href="https://twitter.com/capsulecomtr"
-target="_blank"
-rel="noopener noreferrer"
-class="text-muted transition-colors duration-200 hover:text-text">
-x
-</a>
+<a href="https://twitter.com/capsulecomtr" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text">x</a>
 
-<a href="https://youtube.com/@capsulecomtr"
-target="_blank"
-rel="noopener noreferrer"
-class="text-muted transition-colors duration-200 hover:text-text">
-yt
-</a>
+<a href="https://youtube.com/@capsulecomtr" target="_blank" rel="noopener noreferrer" class="text-muted transition-colors duration-200 hover:text-text">yt</a>
 
-<a href="https://www.twitch.tv/capsulecomtr"
-class="text-muted transition-colors duration-200 hover:text-text">
-tw
-</a>
+<a href="https://www.twitch.tv/capsulecomtr" class="text-muted transition-colors duration-200 hover:text-text">tw</a>
 
-<a href="javascript:void(0)"
-class="text-muted transition-colors duration-200 hover:text-text">
-dc
-</a>
+<a href="javascript:void(0)" class="text-muted transition-colors duration-200 hover:text-text">dc</a>
 
 </div>
 
@@ -162,6 +173,7 @@ dc
 </footer>
 
 </main>
+
 <script>
 function reloadImages() {
     document.querySelectorAll("img").forEach(img => {
@@ -178,5 +190,6 @@ function reloadImages() {
 document.addEventListener("astro:page-load", reloadImages);
 window.addEventListener("pageshow", reloadImages);
 </script>
+
 </body>
 </html>
