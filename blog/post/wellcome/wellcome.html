@@ -73,11 +73,12 @@ December 15, 2026
 <p>A new kind of Thinking Machine.</p>
 
 <img
-    src="thinkingmachine.png"
+    id="thinking-machine"
+    src="thinkingmachine.png?v=1"
     alt="thinking machine prototype"
     loading="eager"
     fetchpriority="high"
-    decoding="async"
+    decoding="sync"
     class="w-full rounded border border-white/5 bg-white/5 object-cover max-h-[500px]">
 
 <p>Designed around a simple belief: AI should expand human potential, not replace it. It should be present when it matters, adapt to the way people think, and become a natural extension of human curiosity and creativity.</p>
@@ -93,8 +94,10 @@ December 15, 2026
 </div>
 
 <aside class="mb-8 text-center">
-<a href="../../../blog/blog.html"
-class="group mt-8 -mb-4 inline-flex items-center justify-center gap-2 p-2 text-muted transition-colors duration-200 hover:text-text">
+<a
+    href="../../../blog/blog.html"
+    data-astro-reload
+    class="group mt-8 -mb-4 inline-flex items-center justify-center gap-2 p-2 text-muted transition-colors duration-200 hover:text-text">
 
 <svg xmlns="http://www.w3.org/2000/svg"
 class="size-4"
@@ -159,6 +162,21 @@ dc
 </footer>
 
 </main>
+<script>
+function reloadImages() {
+    document.querySelectorAll("img").forEach(img => {
+        const original = img.getAttribute("src");
+        if (!original) return;
 
+        const url = new URL(original, location.href);
+        url.searchParams.set("_", Date.now());
+
+        img.src = url.toString();
+    });
+}
+
+document.addEventListener("astro:page-load", reloadImages);
+window.addEventListener("pageshow", reloadImages);
+</script>
 </body>
 </html>
