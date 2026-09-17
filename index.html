@@ -3,55 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>capsule</title>
-    <meta name="description" content="builds things">
-    <meta name="keywords" content="capsule, ai, beatsmood, audio, visual, thinkingmachine, artificial intelligence, builds things">
+
+    <!-- Primary SEO -->
+    <title>capsule — builds things</title>
+    <meta
+        name="description"
+        content="capsule builds AI systems, music, visual experiments and creative projects."
+    >
     <meta name="theme-color" content="#050505">
     <meta name="color-scheme" content="dark">
-    
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://capsule.com.tr/">
+
     <!-- View Transitions & Router -->
     <meta name="astro-view-transitions-enabled" content="true">
     <meta name="astro-view-transitions-fallback" content="animate">
     <script type="module" src="./astro/ClientRouter.js"></script>
-    
+
     <!-- Favicon & Styles -->
     <link rel="icon" type="image/svg+xml" href="./favicon.svg?v=3">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
-    <link rel="canonical" href="https://capsule.com.tr">
     <link rel="stylesheet" href="./astro/BaseLayout.css">
     <script type="module" src="./astro/page.js"></script>
-    
-    <!-- Social Meta Tags (Open Graph / Twitter) -->
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://capsule.com.tr">
-    <meta property="og:title" content="capsule">
-    <meta property="og:description" content="builds things.">
+    <meta property="og:url" content="https://capsule.com.tr/">
+    <meta property="og:site_name" content="capsule">
+    <meta property="og:title" content="capsule — builds things">
+    <meta
+        property="og:description"
+        content="capsule builds AI systems, music, visual experiments and creative projects."
+    >
     <meta property="og:image" content="https://capsule.com.tr/images/logo.png">
+
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@capsulecomtr">
     <meta name="twitter:creator" content="@capsulecomtr">
+    <meta name="twitter:title" content="capsule — builds things">
+    <meta
+        name="twitter:description"
+        content="capsule builds AI systems, music, visual experiments and creative projects."
+    >
     <meta name="twitter:image" content="https://capsule.com.tr/images/logo.png">
 
+    <!-- Organization -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "capsule",
-      "url": "https://capsule.com.tr",
-      "description": "capsule builds things.",
-      "keywords": "capsule, ai, beatsmood, music"
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "capsule",
+        "url": "https://capsule.com.tr/",
+        "description": "capsule builds AI systems, music, visual experiments and creative projects.",
+        "sameAs": [
+            "https://github.com/capsulecomtr",
+            "https://twitter.com/capsulecomtr",
+            "https://youtube.com/@capsulecomtr"
+        ]
+    }
+    </script>
+
+    <!-- WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "capsule",
+        "url": "https://capsule.com.tr/",
+        "description": "capsule builds AI systems, music, visual experiments and creative projects."
     }
     </script>
 
     <!-- Plausible Analytics -->
-    <script defer data-astro-rerun data-domain="capsule.com.tr" data-api="https://plausible.io/api/event">
+    <script
+        defer
+        data-astro-rerun
+        data-domain="capsule.com.tr"
+        data-api="https://plausible.io/api/event"
+    >
     !function(){var t,n,e,i=document.currentScript,o={};function a(t,n,e){window.fetch&&fetch(t,{method:"POST",headers:{"Content-Type":"text/plain"},keepalive:!0,body:JSON.stringify(n)}).then(function(t){e&&e.callback&&e.callback({status:t.status})}).catch(function(t){e&&e.callback&&e.callback({error:t})})}var c=!1,r=location.href,l={},d=-1,u=0,s=0;function w(){var i=v();if(!t&&(d<e||i>=3e3)){d=e;var c={n:"engagement",sd:Math.round(e/n*100),d:o.domain,u:r,p:l,e:i,v:34};u=0,s=0,a(o.endpoint,c)}}function p(){"visible"===document.visibilityState&&document.hasFocus()&&0===u?u=Date.now():"hidden"!==document.visibilityState&&document.hasFocus()||(s=v(),u=0,w())}function v(){return u?s+(Date.now()-u):s}function f(){var t=document.body||{},n=document.documentElement||{};return Math.max(t.scrollHeight||0,t.offsetHeight||0,t.clientHeight||0,n.scrollHeight||0,n.offsetHeight||0,n.clientHeight||0)}function h(){var t,e;return t=window.innerHeight,e=window.scrollY,n<=t?n:e+t}function g(i,v){var g="pageview"===i;if(g&&c&&(w(),n=f(),e=h()),/^localhost$|^127(\.[0-9]+){0,2}\.[0-9]+$|^\[::1?\]$/.test(location.hostname)||"file:"===location.protocol)return m(i,v,"localhost");if((window._phantom||window.__nightmare||window.navigator.webdriver||window.Cypress)&&!window.__plausible)return m(i,v);try{if("true"===window.localStorage.plausible_ignore)return m(i,v,"localStorage flag")}catch(t){}var b={};b.n=i,b.v=34,b.u=location.href,b.d=o.domain,b.r=document.referrer||null,v&&v.meta&&(b.m=JSON.stringify(v.meta)),v&&v.props&&(b.p=v.props),v&&!1===v.interactive&&(b.i=!1),g&&(t=!1,r=b.u,l=b.p,d=-1,s=0,u=Date.now(),c||(document.addEventListener("visibilitychange",p),window.addEventListener("blur",p),window.addEventListener("focus",p),c=!0)),a(o.endpoint,b,v)}function m(n,e,i){i&&o.logging&&console.warn("Ignoring Event: "+i),e&&e.callback&&e.callback(),"pageview"===n&&(t=!0)}!function t(a){o.endpoint=i.getAttribute("data-api")||new URL(i.src).origin+"/api/event",o.domain=i.getAttribute("data-domain"),o.logging=!0,n=f(),e=h(),new ResizeObserver(function(){n=f()}).observe(document.documentElement),document.addEventListener("scroll",function(){var t=h();t>e&&(e=t)}),function(t){function n(n){n&&e===location.pathname||(e=location.pathname,t("pageview"))}var e,i=function(){n(!0)},o=window.history;if(o.pushState){var a=o.pushState;o.pushState=function(){a.apply(this="pageview")},window.addEventListener("popstate",i)}"hidden"===document.visibilityState||"prerender"===document.visibilityState?document.addEventListener("visibilitychange",function(){e||"visible"!==document.visibilityState||n()}):n(),window.addEventListener("pageshow",function(t){t.persisted&&n()})}(g);for(var c=window.plausible&&window.plausible.q||[],r=0;r<c.length;r++)g.apply(this,c[r]);window.plausible=g,window.plausible.init=t,window.plausible.v=34,window.plausible.l=!0}()}();
     </script>
 </head>
+
 <body class="min-h-full bg-void font-mono text-text selection:bg-accent/20">
     <main class="flex flex-col text-text">
         <div class="relative flex min-h-screen flex-col items-center justify-center px-6">
+
             <!-- Subtle ambient glow -->
-            <div class="pointer-events-none absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.03]" style="background: radial-gradient(circle, #00f5ff 0%, transparent 70%);"></div>
+            <div
+                class="pointer-events-none absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.03]"
+                style="background: radial-gradient(circle, #00f5ff 0%, transparent 70%);"></div>
             
             <div class="relative z-10 w-full max-w-xs">
                 <!-- Header -->
