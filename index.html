@@ -21,13 +21,40 @@
     <meta name="astro-view-transitions-fallback" content="animate">
     <script type="module" src="./astro/ClientRouter.js"></script>
 
-    <!-- Favicon & Styles -->
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg?v=3">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+    <!-- ========================================= -->
+    <!-- Favicon -->
+    <!-- ========================================= -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/images/logo.png" type="image/png" sizes="32x32">
+
+    <!-- ========================================= -->
+    <!-- Apple / iOS -->
+    <!-- ========================================= -->
+    <link
+        rel="apple-touch-icon"
+        href="/images/apple-touch-icon.png"
+        sizes="180x180"
+    >
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"
+    >
+    <meta name="apple-mobile-web-app-title" content="capsule">
+
+    <!-- ========================================= -->
+    <!-- PWA -->
+    <!-- ========================================= -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="./astro/BaseLayout.css">
     <script type="module" src="./astro/page.js"></script>
 
+    <!-- ========================================= -->
     <!-- Open Graph -->
+    <!-- ========================================= -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://capsule.com.tr/">
     <meta property="og:site_name" content="capsule">
@@ -36,9 +63,14 @@
         property="og:description"
         content="capsule builds AI systems, music, visual experiments and creative projects."
     >
-    <meta property="og:image" content="https://capsule.com.tr/images/logo.png">
+    <meta
+        property="og:image"
+        content="https://capsule.com.tr/images/logo.png"
+    >
 
+    <!-- ========================================= -->
     <!-- Twitter / X -->
+    <!-- ========================================= -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@capsulecomtr">
     <meta name="twitter:creator" content="@capsulecomtr">
@@ -47,9 +79,14 @@
         name="twitter:description"
         content="capsule builds AI systems, music, visual experiments and creative projects."
     >
-    <meta name="twitter:image" content="https://capsule.com.tr/images/logo.png">
+    <meta
+        name="twitter:image"
+        content="https://capsule.com.tr/images/logo.png"
+    >
 
+    <!-- ========================================= -->
     <!-- Organization -->
+    <!-- ========================================= -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -65,7 +102,9 @@
     }
     </script>
 
+    <!-- ========================================= -->
     <!-- WebSite -->
+    <!-- ========================================= -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -76,7 +115,9 @@
     }
     </script>
 
+    <!-- ========================================= -->
     <!-- Plausible Analytics -->
+    <!-- ========================================= -->
     <script
         defer
         data-astro-rerun
